@@ -1,0 +1,89 @@
+
+body {
+    background-color: #333;
+    color: whitesmoke;
+    width:95%;
+    margin:auto;
+}
+a {
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+
+/*Header*/
+header{
+    margin-top:20px;
+}
+header h1 {
+    text-align:center;
+    font-size:42px;
+}
+header .container{
+    width:100%;
+    padding:0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:1em;
+}
+header .child{
+    list-style: none;
+    text-align:center;
+    border:1px solid black;
+    height:30px;
+    padding-top:15px;
+}
+
+
+footer {
+    position:fixed;
+    bottom:0;
+    width:40%;
+    left:30%;
+    right:30%;
+}
+footer h3{
+    text-align:center;
+    border-top: 1px solid #888;
+}
+
+
+
+/*About*/
+.aboutImg {
+    width: 250px;
+}
+
+
+.flexContainer{
+    display:flex;
+}
+.flexContainer div {
+    margin-left: 20px;
+}
+
+
+
+/*Weather*/
+.weather{
+    width:80%;
+    margin:auto;
+    border: 1px solid white;
+    padding:20px;
+    height:100px;
+}
+
+/*Form functionality*/
+#response {
+    display:none;
+}
+#request > *{
+    width:200px;
+    padding:10px;
+}
+#request :last-child{
+    margin-left:10%;
+}
+button {
+    cursor:pointer
+}
