@@ -1,4 +1,5 @@
-import request from "request";
+// import request from "request";
+const request = require("request");
 
 const getWeather = (latLon, callback)=>{
     let unit = "&units=m" //language

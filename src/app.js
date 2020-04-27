@@ -1,17 +1,22 @@
-import path from "path";
-import express from "express";
-import hbs from "hbs";
-import {getGeoCode} from "./utils/getGeoCode.js";
-import {getWeather} from "./utils/getWeather.js";
+// import path from "path";
+// import express from "express";
+// import hbs from "hbs";
+// import {getGeoCode} from "./utils/getGeoCode.js";
+// import {getWeather} from "./utils/getWeather.js";
 
-
+const path = require("path");
+const express = require("express");
+const hbs = require("hbs");
+const getGeoCode = require("./utils/getGeoCode.js");
+const getWeather = require("./utils/getWeather.js");
 
 
 const app = express();
 const port = process.env.PORT || 3000;
-let importMeta = new URL(import.meta.url).pathname; //import path to directory with import.meta
-importMeta = importMeta.replace("/C", "C"); //replacing "/C" at beginning of path string with C
-const __dirname = path.join(importMeta, "../../public"); // Setting __dirname to the right path
+// let importMeta = new URL(import.meta.url).pathname; //import path to directory with import.meta
+// importMeta = importMeta.replace("/C", "C"); //replacing "/C" at beginning of path string with C
+// const __dirname = path.join(importMeta, "../../public"); // Setting __dirname to the right path
+
 
 const publicPath = path.join(__dirname, "../public/"); //path to folder of index.html
 const viewsPath = path.join(__dirname, "../templates/views"); //path to views folder
