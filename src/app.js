@@ -5,10 +5,10 @@ import {getGeoCode} from "./utils/getGeoCode.js";
 import {getWeather} from "./utils/getWeather.js";
 
 
-const port = process.env.PORT || 3000;
 
 
 const app = express();
+const port = process.env.PORT || 3000;
 let importMeta = new URL(import.meta.url).pathname; //import path to directory with import.meta
 importMeta = importMeta.replace("/C", "C"); //replacing "/C" at beginning of path string with C
 const __dirname = path.join(importMeta, "../../public"); // Setting __dirname to the right path
