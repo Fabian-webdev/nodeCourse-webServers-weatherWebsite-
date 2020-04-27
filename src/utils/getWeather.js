@@ -21,4 +21,5 @@ const getWeather = (latLon, callback)=>{
     })
 }
 
-export {getWeather};
+// export {getWeather};
+module.exports = getWeather;

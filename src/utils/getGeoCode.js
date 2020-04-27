@@ -21,4 +21,5 @@ const getGeoCode = (location, callback)=>{
     })
 }
 
-export {getGeoCode};
+// export {getGeoCode};
+module.exports = getGeoCode;
